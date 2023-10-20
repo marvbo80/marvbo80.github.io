@@ -87,6 +87,12 @@
             $("#div_ctr6").html("Elephant Ear Plant");
     });
         //closing the document.ready
+        //toggle the photo on/off
+
+        $("#togglephoto")click(function () {
+          console.log("toggle the photo");
+          $("#myphoto").fadeToggle();
+        })
     });
       
     </script>
@@ -99,6 +105,7 @@
       <img id="myphoto" src="flagstaffhome.JPG" />
       <p class="caption">Marvin Pavatea</p>
       <p class="caption">Photo by Author</p>
+       <button id="togglephoto">Toggle the photo on/off.</button>
     </div>
      
    <h1>These are a few of my favorite things.</h1>
