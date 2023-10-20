@@ -34,7 +34,52 @@
       #thingsilike {background-color: #fefeee; }
       #houseplants {font-family: "Lucida Console";
                     background-color: #fefeee; }
+   
+
     </style>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      
+    // This is where I put my javascript
+
+    // Do this when we click on the clicktoreveal1 button
+       $("#clicktoreveal1").click(function() {
+          //run this when I click on this button
+          $("clicktoreveal1").html("Norfolk Island Pine");
+    });
+
+     // Do this when we click on the clicktoreveal2 button
+       $("#clicktoreveal2").click(function() {
+          //run this when I click on this button
+          $("clicktoreveal2").html("Monstera");
+    });
+
+     // Do this when we click on the clicktoreveal3 button
+       $("#clicktoreveal3").click(function() {
+          //run this when I click on this button
+          $("clicktoreveal3").html("Snakeplant");
+    });
+
+     // Do this when we click on the clicktoreveal4 button
+       $("#clicktoreveal4").click(function() {
+          //run this when I click on this button
+          $("clicktoreveal4").html("Aloe");
+    });
+
+     // Do this when we click on the clicktoreveal5 button
+       $("#clicktoreveal5").click(function() {
+          //run this when I click on this button
+          $("clicktoreveal5").html("Peace Lily");
+    });
+
+     // Do this when we click on the clicktoreveal6 button
+       $("#clicktoreveal6").click(function() {
+          //run this when I click on this button
+          $("clicktoreveal6").html("Elephant Ear Plant");
+    });
+    </script>
   </head>
    <body>
    <div id="container">
@@ -61,12 +106,12 @@
     <div id="houseplants">
     <p>I have a bunch of houseplants: Here are a few examples</p>
     <ul>
-      <li>Norfolk Island Pine</li>
-      <li>Monstera</li>
-      <li>Snakeplant</li>
-      <li>Aloe</li>
-      <li>Peace Lily</li>
-      <li>Elephant Ear plant</li>
+      <li><button id="clicktoreveal1">Click to reveal...</button></li>
+      <li><button id="clicktoreveal2">Click to reveal...</button></li>
+      <li><button id="clicktoreveal3">Click to reveal...</button></li>
+      <li><button id="clicktoreveal4">Click to reveal...</button></li>
+      <li><button id="clicktoreveal5">Click to reveal...</button></li>
+      <li><button id="clicktoreveal6">Click to reveal...</button></li>
     </ul>
     </div>
   
