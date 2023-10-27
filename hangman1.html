@@ -37,7 +37,7 @@
               $(".letter").click( function() {
 
                   // check if the game has been won or lost
-                  if (gameWon != true && gameLost != true) {
+                      if (gameWon != true && gameLost != true) {
                     // erase the info box
 
                 
@@ -50,8 +50,8 @@
 
                     // if the letter has already been clicked on, 
                     // let the user know it's already been tried
-                    if (triedLetters.includes(letter)) {
-                        $("#info").text("Letter "+letter+" Already tried. ");
+                       if (triedLetters.includes(letter)) {
+                          $("#info").text("Letter "+letter+" already tried. ");
 
                     // if the letter isn't in the word, reduce
                     // the number of tries and check if they lost
@@ -92,7 +92,7 @@
                      
                       // check if the player has won the game
                           if(! blank.includes("-")) {
-                           gameWon = true;
+                            gameWon = true;
                             $("#info").text("You Won! Good Job!");
                             
                             
