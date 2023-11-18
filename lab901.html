@@ -96,7 +96,7 @@
 			return styleReturn;
 		}
 
-    }
+    })
     //
 
     var layerControl = L.control.layers(baseMaps, null).addTo(map);
@@ -107,7 +107,12 @@
 
 			//convert the file (data) into a layer
 			acsDenver2021Layer = L.geoJSON(data,
-                                     { style:style1 }
+                                     { style:style1, 
+				     onEachFeature: function(feature, layer) {
+				layer.bindPopup("Percent Poverty: " + 
+feature.properties.PCT_POVERTY + "%");
+				     }						     
+}
         ).addTo(map);
 		});
 		// let's try to add some remote DRCOG data
